@@ -31,7 +31,7 @@ jobs:
     env:
       DATABASE_URL: postgresql://test_user:test_pass@localhost:5432/test_db
       FLASK_APP: app.py
-      JWT_SECRET_KEY: "${{ secrets.JWT_SECRET_KEY }}"
+      JWT_SECRET_KEY: ${ secrets.JWT_SECRET_KEY }
 
     steps:
     - uses: actions/checkout@v4
